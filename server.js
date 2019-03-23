@@ -25,8 +25,8 @@ app.use(express.json());
 // The below points our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
-require("./routing/apiRoutes")(app) //Pass APP to routes for express() use in those files
-require("./routing/htmlRouters")(app)//Pass APP to routes for express() use in those files
+require("./app/routing/apiRoutes")(app) //Pass APP to routes for express() use in those files
+require("./app/routing/htmlRouters")(app)//Pass APP to routes for express() use in those files
 
 // =============================================================================
 // LISTENER
